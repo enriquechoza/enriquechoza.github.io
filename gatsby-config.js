@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Enrique Choza",
   },
+  pathPrefix: "/",
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
