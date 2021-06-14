@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://enrique-choza/./src/pages/index.js"],"names":[],"mappings":"wIAMA,UAJkB,kBAChB","file":"component---src-pages-index-js-ebeaffd374f33dd6cc7e.js","sourcesContent":["import * as React from \"react\"\n\nconst IndexPage = () => (\n  <h1>WIP</h1>\n);\n\nexport default IndexPage\n"],"sourceRoot":""}

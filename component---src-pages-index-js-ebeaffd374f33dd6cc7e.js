@@ -1,0 +1,2 @@
+(self.webpackChunkenrique_choza=self.webpackChunkenrique_choza||[]).push([[678],{7704:function(e,n,u){"use strict";u.r(n);var c=u(7294);n.default=function(){return c.createElement("h1",null,"WIP")}}}]);
+//# sourceMappingURL=component---src-pages-index-js-ebeaffd374f33dd6cc7e.js.map
