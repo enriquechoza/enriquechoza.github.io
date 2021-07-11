@@ -1,16 +1,16 @@
 import { css } from 'styled-components';
 
-import RobotoBold from '@fonts/Roboto/Roboto-Bold.ttf';
-import RobotoBoldItalic from '@fonts/Roboto/Roboto-BoldItalic.ttf';
-import RobotoItalic from '@fonts/Roboto/Roboto-Italic.ttf';
-import RobotoMedium from '@fonts/Roboto/Roboto-Medium.ttf';
-import RobotoMediumItalic from '@fonts/Roboto/Roboto-MediumItalic.ttf';
-import RobotoRegular from '@fonts/Roboto/Roboto-Regular.ttf';
+import RobotoBold from '../assets/fonts/Roboto/Roboto-Bold.ttf';
+import RobotoBoldItalic from '../assets/fonts/Roboto/Roboto-BoldItalic.ttf';
+import RobotoItalic from '../assets/fonts/Roboto/Roboto-Italic.ttf';
+import RobotoMedium from '../assets/fonts/Roboto/Roboto-Medium.ttf';
+import RobotoMediumItalic from '../assets/fonts/Roboto/Roboto-MediumItalic.ttf';
+import RobotoRegular from '../assets/fonts/Roboto/Roboto-Regular.ttf';
 
-import RobotoMonoSemiBold from '@fonts/RobotoMono/RobotoMono-SemiBold.ttf';
-import RobotoMonoLight from '@fonts/RobotoMono/RobotoMono-Light.ttf';
-import RobotoMonoMedium from '@fonts/RobotoMono/RobotoMono-Medium.ttf';
-import RobotoMonoRegular from '@fonts/RobotoMono/RobotoMono-Regular.ttf';
+import RobotoMonoSemiBold from '../assets/fonts/RobotoMono/RobotoMono-SemiBold.ttf';
+import RobotoMonoLight from '../assets/fonts/RobotoMono/RobotoMono-Light.ttf';
+import RobotoMonoMedium from '../assets/fonts/RobotoMono/RobotoMono-Medium.ttf';
+import RobotoMonoRegular from '../assets/fonts/RobotoMono/RobotoMono-Regular.ttf';
 
 const robotoNormalWeights = {
   400: RobotoRegular,
@@ -65,8 +65,8 @@ const robotoItalic = createFontFaces(roboto, 'italic');
 
 const robotoMonoNormal = createFontFaces(robotoMono);
 
-const Fonts = css`
+const fonts = css`
   ${robotoNormal + robotoItalic + robotoMonoNormal}
 `;
 
-export default Fonts;
+export { fonts };
