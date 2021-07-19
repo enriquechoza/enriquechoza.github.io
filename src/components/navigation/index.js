@@ -1,30 +1,33 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'gatsby';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import { NAV_ITEMS } from '../../config';
-import { Nav } from './styles';
+import { StyledNav, StyledOrderedList, StyledListItem, StyledSpan, StyledTooltip } from './styles';
 
-const Navigation = ({ location }) => {
-  const [activeSection, setActiveSection] = useState(0);
+const Navigation = () => {
+  const [activeSection, setActiveSection] = useState('#about');
 
-  useEffect(() => {
-    const section = NAV_ITEMS.findIndex((item) => item.url.substring(1) === location.hash);
-    setActiveSection(section);
-  }, [location]);
+  function handleOnClick(url) {
+    setActiveSection(url);
+    scrollTo(url);
+  }
 
   return (
-    <Nav>
-      <ol>
+    <StyledNav>
+      <StyledOrderedList>
         {NAV_ITEMS &&
           NAV_ITEMS.map(({ url, name }, i) => (
-            <li key={i}>
-              <Link className={`nav-link ${i === activeSection && "active"}`} to={url}>
+            <StyledListItem key={i}>
+              <StyledSpan
+                className={`${url === activeSection ? "active" : ""}`}
+                onClick={() => handleOnClick(url)}
+              >
                 {`0${ i+1 }`}
-              </Link>
-              <span>{name}</span>
-            </li>
+              </StyledSpan>
+              <StyledTooltip>{name}</StyledTooltip>
+            </StyledListItem>
           ))}
-      </ol>
-    </Nav>
+      </StyledOrderedList>
+    </StyledNav>
   )
 }
 

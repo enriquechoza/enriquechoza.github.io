@@ -2,7 +2,7 @@
   "name": "enrique-choza",
   "version": "1.0.0",
   "private": true,
-  "description": "Enrique Choza",
+  "description": "Enrique Choza's personal website.",
   "author": "Enrique Choza",
   "keywords": [
     "gatsby"
@@ -21,6 +21,7 @@
     "gatsby-plugin-image": "^1.7.1",
     "gatsby-plugin-react-helmet": "^4.7.1",
     "gatsby-plugin-sharp": "^3.7.1",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-plugin-styled-components": "^4.7.1",
     "gatsby-source-filesystem": "^3.7.1",
     "gatsby-transformer-sharp": "^3.7.1",

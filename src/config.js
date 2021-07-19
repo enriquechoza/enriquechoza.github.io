@@ -1,18 +1,18 @@
 export const NAV_ITEMS = [
   {
     name: 'About',
-    url: '/#about',
+    url: '#about',
   },
   {
     name: 'Experience',
-    url: '/#jobs',
+    url: '#jobs',
   },
   {
     name: 'Work',
-    url: '/#portfolio',
+    url: '#portfolio',
   },
   {
     name: 'Contact',
-    url: '/#contact',
+    url: '#contact',
   },
 ];
