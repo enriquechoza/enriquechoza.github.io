@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const PageSection = styled.div`
+const PageSection = styled.section`
   align-items: center;
   display: flex;
   justify-content: center;

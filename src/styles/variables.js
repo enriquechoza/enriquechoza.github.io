@@ -8,8 +8,9 @@ const variables = css`
     --light-salmon: #f3f3f3;
     --accent-orange: #f26419;
     --white: #e6f1ff;
+    --light-slate: #ccd6f6;
 
-    --font-sans: 'Roboto', 'Calibre', -apple-system, system-ui, sans-serif;
+    --font-sans: 'Calibre', -apple-system, system-ui, sans-serif;
     --font-mono: 'Roboto Mono', 'Fira Code', monospace;
 
     --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
